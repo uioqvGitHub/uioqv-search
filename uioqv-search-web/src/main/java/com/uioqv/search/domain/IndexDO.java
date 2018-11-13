@@ -15,12 +15,11 @@ import java.util.List;
 @Getter
 @Setter
 @Document
-public class ProjectDO extends BaseDO {
+public class IndexDO extends BaseDO {
     /**
-     * 项目名
+     * 索引名
      */
     @Indexed(unique = true)
-    private String  projectName;
-    private String  database;
+    private String      indexName;
 
 }

@@ -7,7 +7,7 @@ import org.springframework.stereotype.Controller;
  * @since 2018-10-23
  */
 @Controller
-public class IndexCreateHandler {
+public class IndexHandler {
 //    public Mono<ServerResponse> findByUsername(ServerRequest serverRequest) {
 //        return ServerResponse.ok().contentType(MediaType.APPLICATION_STREAM_JSON).body(
 //                userService.findByUsername(serverRequest.pathVariable("username"))

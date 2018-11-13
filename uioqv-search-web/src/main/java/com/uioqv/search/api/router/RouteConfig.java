@@ -24,11 +24,21 @@ public class RouteConfig {
     private DocumentHandler documentHandler;
     @Autowired
     private ProjectHandler projectHandler;
+
+    /**
+     * 文档服务
+     * @return
+     */
     @Bean
     public RouterFunction<ServerResponse> document() {
-        return route( POST("/documents"), documentHandler::save );
+        return route( POST("/documents"), documentHandler::save )
+                .andRoute( GET("/documents"), documentHandler::find);
     }
 
+    /**
+     * 项目服务
+     * @return
+     */
     @Bean
     public RouterFunction<ServerResponse> project() {
         return route( POST("/projects"), projectHandler::save )

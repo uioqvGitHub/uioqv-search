@@ -32,10 +32,26 @@
 		<mapstruct.version>1.2.0.Final</mapstruct.version>
 		<junit.version>4.12</junit.version>
 		<apache.commons.version>3.8</apache.commons.version>
+		<uioqv-base.version>1.0-SNAPSHOT</uioqv-base.version>
 	</properties>
 
 	<dependencyManagement>
 		<dependencies>
+			<dependency>
+				<groupId>com.uioqv</groupId>
+				<artifactId>uioqv-base</artifactId>
+				<exclusions>
+					<exclusion>
+						<groupId>org.slf4j</groupId>
+						<artifactId>slf4j-log4j12</artifactId>
+					</exclusion>
+					<exclusion>
+						<groupId>log4j</groupId>
+						<artifactId>log4j</artifactId>
+					</exclusion>
+				</exclusions>
+				<version>${uioqv-base.version}</version>
+			</dependency>
 			<dependency>
 				<groupId>junit</groupId>
 				<artifactId>junit</artifactId>
@@ -91,6 +107,7 @@
 				<artifactId>uioqv-search-api</artifactId>
 				<version>${project.version}</version>
 			</dependency>
+
 
 		</dependencies>
 

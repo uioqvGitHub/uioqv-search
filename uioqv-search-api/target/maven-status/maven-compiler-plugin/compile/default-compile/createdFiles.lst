@@ -1,9 +1,9 @@
-com/uioqv/search/Result.class
-com/uioqv/search/dto/IndexFieldDTO.class
+com/uioqv/search/dto/FieldDTO.class
+com/uioqv/search/dto/DocumentDTO.class
+com/uioqv/search/qto/ProjectQTO.class
 com/uioqv/search/dto/ProjectDTO.class
-com/uioqv/search/dto/IndexCreateDTO.class
 com/uioqv/search/service/ProjectService.class
-com/uioqv/search/dto/IndexDocumentDTO.class
 com/uioqv/search/service/IndexCreateService.class
+com/uioqv/search/dto/IndexDTO.class
 com/uioqv/search/enums/SourceTypeEnum.class
 com/uioqv/search/service/DocumentService.class

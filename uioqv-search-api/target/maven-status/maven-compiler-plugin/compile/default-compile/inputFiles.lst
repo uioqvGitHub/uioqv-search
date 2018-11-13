@@ -1,9 +1,9 @@
-/Users/uioqv/Data/idea_workspace/uioqv-search/uioqv-search-api/src/main/java/com/uioqv/search/dto/IndexDocumentDTO.java
-/Users/uioqv/Data/idea_workspace/uioqv-search/uioqv-search-api/src/main/java/com/uioqv/search/dto/IndexCreateDTO.java
-/Users/uioqv/Data/idea_workspace/uioqv-search/uioqv-search-api/src/main/java/com/uioqv/search/Result.java
+/Users/uioqv/Data/idea_workspace/uioqv-search/uioqv-search-api/src/main/java/com/uioqv/search/dto/FieldDTO.java
 /Users/uioqv/Data/idea_workspace/uioqv-search/uioqv-search-api/src/main/java/com/uioqv/search/dto/ProjectDTO.java
 /Users/uioqv/Data/idea_workspace/uioqv-search/uioqv-search-api/src/main/java/com/uioqv/search/enums/SourceTypeEnum.java
 /Users/uioqv/Data/idea_workspace/uioqv-search/uioqv-search-api/src/main/java/com/uioqv/search/service/DocumentService.java
-/Users/uioqv/Data/idea_workspace/uioqv-search/uioqv-search-api/src/main/java/com/uioqv/search/dto/IndexFieldDTO.java
+/Users/uioqv/Data/idea_workspace/uioqv-search/uioqv-search-api/src/main/java/com/uioqv/search/dto/DocumentDTO.java
 /Users/uioqv/Data/idea_workspace/uioqv-search/uioqv-search-api/src/main/java/com/uioqv/search/service/ProjectService.java
 /Users/uioqv/Data/idea_workspace/uioqv-search/uioqv-search-api/src/main/java/com/uioqv/search/service/IndexCreateService.java
+/Users/uioqv/Data/idea_workspace/uioqv-search/uioqv-search-api/src/main/java/com/uioqv/search/qto/ProjectQTO.java
+/Users/uioqv/Data/idea_workspace/uioqv-search/uioqv-search-api/src/main/java/com/uioqv/search/dto/IndexDTO.java

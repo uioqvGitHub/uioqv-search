@@ -1,6 +1,6 @@
 package com.uioqv.search.api.handler;
 
-import com.uioqv.search.Result;
+import com.uioqv.base.entity.Result;
 import com.uioqv.search.dto.ProjectDTO;
 import com.uioqv.search.service.ProjectService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -23,17 +23,28 @@ public class ProjectHandler {
     @Autowired
     private ProjectService projectService;
 
+    /**
+     * 保存接口
+     * @param request
+     * @return
+     */
     public Mono<ServerResponse> save(ServerRequest request) {
-        Mono<ProjectDTO> project = request.bodyToMono(ProjectDTO.class);
         return ok().contentType(APPLICATION_JSON).body(
-                projectService.createProject(project).map(Result::success),
+                projectService.createProject(request.bodyToMono(ProjectDTO.class))
+                        .map(Result::success),
                 Result.class
         );
     }
+
+    /**
+     * 查询所有接口
+     * @param serverRequest
+     * @return
+     */
     public Mono<ServerResponse> find(ServerRequest serverRequest) {
         return ok().contentType(MediaType.APPLICATION_STREAM_JSON).body(
-                projectService.findProject().map(Result::success)
-                , Result.class
+                projectService.findProject().map(Result::success),
+                Result.class
         );
     }
 }
